@@ -10,20 +10,20 @@ public class Student {
     private double studentAverage;  // Student Average based on studentGrade
 
     // Set requirements to access constructor
-    public Student(String name, String userName, double avg) {
+    //public Student(String name, String userName, double avg)
+    public Student(String name) {
         this.studentName = name;
-        this.studentUserName = userName;
-        this.studentAverage = avg;
+        //this.studentUserName = userName;
+        //this.studentAverage = avg;
     }
-    // Create a student from Object
-    public static Student createAStudent(String name, String username, double avg) {
-        Student newStudent = new Student(name, username, avg);
-        return newStudent;
-    }
+
     // Main Method to print out students
     public static void main(String[] args) {
-       Student renderStudent = createAStudent("Nikho", "NVR202", 90.5);
-       System.out.println(renderStudent);
+
+    }
+
+    public static double addGrade() {
+        return 0;
     }
 
 }
