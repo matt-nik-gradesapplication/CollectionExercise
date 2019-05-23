@@ -21,12 +21,6 @@ public class GradesApplication  {
         student.put("TreV399", Rico);
         student.put("FDS01", Jerri);
 
-        //HashMap () grades = new HashMap<>();
-        //
-        //
-        //
-        //
-
         System.out.println(student);
 
     }
