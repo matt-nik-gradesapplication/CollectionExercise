@@ -23,7 +23,7 @@ public class Student {
     // Main Method to print out students
     public static void main(String[] args) {
        Student renderStudent = createAStudent("Nikho", "NVR202", 90.5);
-        System.out.println(renderStudent);
+       System.out.println(renderStudent);
     }
 
 }
