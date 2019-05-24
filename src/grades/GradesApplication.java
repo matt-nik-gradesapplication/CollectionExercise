@@ -39,16 +39,24 @@ public class GradesApplication {
         students.put("TreV399", Rico);
         students.put("FDS01", Jerri);
 
-        /* Control Statement */
+        /* Welcome Users */
         System.out.println("____    __    ____  _______  __        ______   ______   .___  ___.  _______ \n" +
                 "\\   \\  /  \\  /   / |   ____||  |      /      | /  __  \\  |   \\/   | |   ____|\n" +
                 " \\   \\/    \\/   /  |  |__   |  |     |  ,----'|  |  |  | |  \\  /  | |  |__   \n" +
                 "  \\            /   |   __|  |  |     |  |     |  |  |  | |  |\\/|  | |   __|  \n" +
                 "   \\    /\\    /    |  |____ |  `----.|  `----.|  `--'  | |  |  |  | |  |____ \n" +
                 "    \\__/  \\__/     |_______||_______| \\______| \\______/  |__|  |__| |_______|!");
+        System.out.println("   |\\---/|\n" +
+                "   | ,_, |\n" +
+                "    \\_`_/-..----.\n" +
+                " ___/ `   ' ,\"\"+ \\  sk\n" +
+                "(__...'   __\\    |`.___.';\n" +
+                "  (_,...'(_,.`__)/'.....+");
 
         System.out.println("///////////////////////////////////////////////////////////////////////////////");
         String promptUser;
+
+        // Start Control Statement
         do {
             System.out.println("Get student average grade from usernames below:");
             System.out.println("|---------|---------|---------|-------|");
@@ -59,8 +67,9 @@ public class GradesApplication {
             if (students.containsKey(userGradeRequested)) {
                 System.out.println("________________________");
                 System.out.println("| Student Name: " + students.get(userGradeRequested).getName());
-                System.out.println("| GitHub User : " + students.get(userGradeRequested).getUserName());
+                System.out.println("| GitHub User : " + "https://github.com/" + students.get(userGradeRequested).getUserName());
                 System.out.println("| Current Avg : " + students.get(userGradeRequested).getGradeAverage());
+                System.out.format("| Avg based on %s grades \n", students.get(userGradeRequested).getGrade());
                 System.out.println("________________________");
             } else {
                 System.out.format("No user named %s found \n ", userGradeRequested);

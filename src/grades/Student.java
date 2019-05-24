@@ -17,6 +17,10 @@ public class Student {
         return name;
     }
 
+    public int getGrade() {
+        return grades.size();
+    }
+
     public String getUserName() {
         return userName;
     }
