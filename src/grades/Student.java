@@ -13,8 +13,6 @@ public class Student {
         this.userName = UserName;
     }
 
-    //  For pushing into Git.
-
     public String getName(){
         return name;
     }
@@ -27,6 +25,7 @@ public class Student {
         grades.add(grade);
     }
 
+
     public double getGradeAverage(){
         double  total = 0;
 
@@ -37,6 +36,6 @@ public class Student {
     }
 
     public static void main(String[] args) {
-
+            // Add info here eventually
     }
 }

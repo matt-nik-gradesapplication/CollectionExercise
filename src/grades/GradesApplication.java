@@ -14,6 +14,7 @@ public class GradesApplication {
         Student Rico = new Student("Rico", "TreV399");
         Student Jerri = new Student("Jerri", "FDS01");
 
+        // Add grades to each individual student
         Geo.addGrade(60);
         Geo.addGrade(78);
         Geo.addGrade(67);
@@ -38,9 +39,6 @@ public class GradesApplication {
         students.put("TreV399", Rico);
         students.put("FDS01", Jerri);
 
-
-
-
         /* Control Statement */
         System.out.println("____    __    ____  _______  __        ______   ______   .___  ___.  _______ \n" +
                 "\\   \\  /  \\  /   / |   ____||  |      /      | /  __  \\  |   \\/   | |   ____|\n" +
@@ -58,14 +56,12 @@ public class GradesApplication {
             System.out.println("|---------|---------|---------|-------|");
 
             String userGradeRequested = scan.nextLine();
-
             if (students.containsKey(userGradeRequested)) {
                 System.out.println("________________________");
                 System.out.println("| Student Name: " + students.get(userGradeRequested).getName());
                 System.out.println("| GitHub User : " + students.get(userGradeRequested).getUserName());
                 System.out.println("| Current Avg : " + students.get(userGradeRequested).getGradeAverage());
                 System.out.println("________________________");
-
             } else {
                 System.out.format("No user named %s found \n ", userGradeRequested);
             }
