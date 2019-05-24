@@ -49,12 +49,12 @@ public class GradesApplication {
                 "   \\    /\\    /    |  |____ |  `----.|  `----.|  `--'  | |  |  |  | |  |____ \n" +
                 "    \\__/  \\__/     |_______||_______| \\______| \\______/  |__|  |__| |_______|!");
 
+        System.out.println("///////////////////////////////////////////////////////////////////////////////");
         String promptUser;
-
         do {
             System.out.println("Get student average grade from usernames below:");
             System.out.println("|---------|---------|---------|-------|");
-            System.out.format("| %s | %s | %s | %s", Geo.getUserName(), Joe.getUserName(), Rico.getUserName(), Jerri.getUserName() + '\n');
+            System.out.format("| %s | %s | %s | %s", Geo.getUserName(), Joe.getUserName(), Rico.getUserName(), Jerri.getUserName() + " |" + '\n');
             System.out.println("|---------|---------|---------|-------|");
 
             String userGradeRequested = scan.nextLine();
@@ -69,7 +69,7 @@ public class GradesApplication {
             } else {
                 System.out.format("No user named %s found \n ", userGradeRequested);
             }
-            System.out.println("Would you like to see user grades? Yes / No");
+            System.out.println("Would you like to see moar user grades? Yes / No");
             promptUser = scan.nextLine();
         } while(promptUser.equalsIgnoreCase("yes"));
     }
