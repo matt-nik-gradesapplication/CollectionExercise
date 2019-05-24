@@ -1,29 +1,42 @@
 package grades;
-
 import java.util.*;
 
 public class Student {
-    //Student objects
-    private String studentName;     // Actual student name
-    private String studentUserName; // GitHub Username
-    private int studentGrade;       // Student Grade passed to an array
-    private double studentAverage;  // Student Average based on studentGrade
 
-    // Set requirements to access constructor
-    //public Student(String name, String userName, double avg)
-    public Student(String name) {
-        this.studentName = name;
-        //this.studentUserName = userName;
-        //this.studentAverage = avg;
+    private String name;
+    private String userName;
+    private List<Integer> grades;
+
+    Student(String name, String UserName){
+        this.name = name;
+        this.grades = new ArrayList<>();
+        this.userName = UserName;
     }
 
-    // Main Method to print out students
+    //  For pushing into Git.
+
+    public String getName(){
+        return name;
+    }
+
+    public String getUserName() {
+        return userName;
+    }
+
+    public void addGrade(int grade){
+        grades.add(grade);
+    }
+
+    public double getGradeAverage(){
+        double  total = 0;
+
+        for(int i = 0; i < this.grades.size(); i++){
+            total += this.grades.get(i);
+        }
+        return total / grades.size();
+    }
+
     public static void main(String[] args) {
 
     }
-
-    public static double addGrade() {
-        return 0;
-    }
-
 }
