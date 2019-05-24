@@ -7,12 +7,9 @@ import java.util.Scanner;
 
 public class GradesApplication {
     public static void main(String[] args) {
-
         Map<String, Student> students = new HashMap<>();
-
         Scanner scan = new Scanner(System.in);
-
-        // Create Student Objects with at least 4 grades
+        // Create Student Objects with at least 3 grades
         Student Geo = new Student("Geo", "Geo1445");
         Student Joe = new Student("Joe", "Cri5900");
         Student Rico = new Student("Rico", "TreV399");
@@ -26,10 +23,12 @@ public class GradesApplication {
         Joe.addGrade(55);
         Joe.addGrade(90);
         Joe.addGrade(98);
+        Joe.addGrade(98);
 
         Rico.addGrade(52);
         Rico.addGrade(98);
         Rico.addGrade(63);
+        Joe.addGrade(98);
 
         Jerri.addGrade(99);
         Jerri.addGrade(99);
@@ -71,7 +70,6 @@ public class GradesApplication {
             } else {
                 System.out.format("No user named %s found \n ", userGradeRequested);
             }
-
             System.out.println("Would you like to see user grades? Yes / No");
             promptUser = scan.nextLine();
         } while(promptUser.equalsIgnoreCase("yes"));

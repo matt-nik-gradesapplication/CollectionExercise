@@ -5,8 +5,6 @@ public class Student {
 
     private String name;
     private String userName;
-
-    //    private int grades;
     private List<Integer> grades;
 
     Student(String name, String UserName){
